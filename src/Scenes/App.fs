@@ -87,6 +87,7 @@ let view (model:AppModel) (dispatch: AppMsg -> unit) =
 
 
 let setuOneSignal dispatch =
+  try
     OneSignal.configure 
         [OnNotificationOpened (Func<_,_,_,_>(fun message data isActive -> dispatch (AppMsg.PushNotificationClicked(message,data,isActive))))
          OnIdsAvailable (AppMsg.SetDeviceID >> dispatch)]
@@ -95,7 +96,7 @@ let setuOneSignal dispatch =
     OneSignal.enableVibrate()
     OneSignal.enableSound()
     OneSignal.enableNotificationsWhenActive()
-
+  with _ -> ()
 
 let setupBackHandler dispatch =    
     let backHandler () =
