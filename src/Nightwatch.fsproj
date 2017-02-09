@@ -50,9 +50,9 @@
     <Compile Include="Database.fs" />
     <Compile Include="Styles.fs" />
     <Compile Include="Messages.fs" />
-    <Compile Include="Scenes/CheckLocation.fs" />
-    <Compile Include="Scenes/LocationList.fs" />
+    <Compile Include="Atoss.fs" />
     <Compile Include="Scenes/Home.fs" />
+    <Compile Include="Scenes/Overview.fs" />
     <Compile Include="Scenes/App.fs" />
     <Compile Include="Nightwatch.fs" />
   </ItemGroup>

@@ -5,36 +5,28 @@ open System
 [<RequireQualifiedAccess>]
 type Page =
 | Home
-| LocationList
-| CheckLocation of int * Model.LocationCheckRequest
+| Overview
 
 type AppMsg =
-| PushNotificationClicked of string * Fable.Import.ReactNativeOneSignal.OneSignalNotificationData * bool
 | NavigateTo of Page
-| SetDeviceID of Fable.Import.ReactNativeOneSignal.OneSignalID
-| SendAlarm of string
 | NavigateBack
 | ExitApp
 | HomeSceneMsg of HomeSceneMsg
-| LocationListMsg of LocationListMsg
-| LocationCheckMsg of LocationCheckMsg
+| OverviewMsg of OverviewMsg
 
 and [<RequireQualifiedAccess>] HomeSceneMsg =
-| GetDemoData
-| NewDemoData of int
-| BeginWatch
+| LoadData
+| LoadedData of Model.LoginInformation option
+| Connect
+| Connected of string
+| ChangeUsername of string
+| ChangePassword of string
 | Error of exn
 
-and [<RequireQualifiedAccess>] LocationListMsg =
-| CheckNextLocation of int * Model.LocationCheckRequest
-| RefreshList
-| NewLocationCheckRequests of (int * Model.LocationCheckRequest)[]
-| Error of exn
-
-and [<RequireQualifiedAccess>] LocationCheckMsg =
-| PictureSelected of string option
-| LocationStatusUpdated of Model.LocationStatus
-| SelectPicture
-| SaveAndGoBack
-| GoBack
+and [<RequireQualifiedAccess>] OverviewMsg =
+| LoadData
+| LoadedData of Model.StampRecord[]
+| Stamp of Model.StampTypes
+| StampConfirmedByServer of Model.StampRecord
+| Logout
 | Error of exn

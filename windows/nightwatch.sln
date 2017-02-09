@@ -1,8 +1,9 @@
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nightwatch", "nightwatch\nightwatch.csproj", "{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nightwatch", "nightwatch\nightwatch.csproj", "{caab1ee1-58e8-4155-94e2-b023f1149fae}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNative", "..\node_modules\react-native-windows\ReactWindows\ReactNative\ReactNative.csproj", "{C7673AD5-E3AA-468C-A5FD-FA38154E205C}"
 EndProject
@@ -11,10 +12,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChakraBridge", "..\node_modules\react-native-windows\ReactWindows\ChakraBridge\ChakraBridge.vcxproj", "{4B72C796-16D5-4E3A-81C0-3E36F531E578}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\node_modules\react-native-windows\ReactWindows\ReactNative.Shared\ReactNative.Shared.projitems*{c7673ad5-e3aa-468c-a5fd-fa38154e205c}*SharedItemsImports = 4
-		..\node_modules\react-native-windows\ReactWindows\ReactNative.Shared\ReactNative.Shared.projitems*{eea8b852-4d07-48e1-8294-a21ab5909fe5}*SharedItemsImports = 13
-	EndGlobalSection
+GlobalSection(SharedMSBuildProjectFiles) = preSolution
+	ReactNative.Shared\ReactNative.Shared.projitems*{98efa5d4-a185-4971-ae77-3845e31b84ce}*SharedItemsImports = 4
+	ReactNative.Shared\ReactNative.Shared.projitems*{c7673ad5-e3aa-468c-a5fd-fa38154e205c}*SharedItemsImports = 4
+	ReactNative.Shared\ReactNative.Shared.projitems*{eea8b852-4d07-48e1-8294-a21ab5909fe5}*SharedItemsImports = 13
+EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
@@ -30,42 +32,42 @@ Global
 		ReleaseBundle|x86 = ReleaseBundle|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|ARM.ActiveCfg = Debug|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|ARM.Build.0 = Debug|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|ARM.Deploy.0 = Debug|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|x64.ActiveCfg = Debug|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|x64.Build.0 = Debug|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|x64.Deploy.0 = Debug|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|x86.ActiveCfg = Debug|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|x86.Build.0 = Debug|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Debug|x86.Deploy.0 = Debug|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|ARM.ActiveCfg = DebugBundle|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|ARM.Build.0 = DebugBundle|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|ARM.Deploy.0 = DebugBundle|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|x64.ActiveCfg = DebugBundle|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|x64.Build.0 = DebugBundle|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|x64.Deploy.0 = DebugBundle|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|x86.ActiveCfg = DebugBundle|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|x86.Build.0 = DebugBundle|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.DebugBundle|x86.Deploy.0 = DebugBundle|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|ARM.ActiveCfg = Release|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|ARM.Build.0 = Release|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|ARM.Deploy.0 = Release|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|x64.ActiveCfg = Release|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|x64.Build.0 = Release|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|x64.Deploy.0 = Release|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|x86.ActiveCfg = Release|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|x86.Build.0 = Release|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.Release|x86.Deploy.0 = Release|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|ARM.ActiveCfg = ReleaseBundle|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|ARM.Build.0 = ReleaseBundle|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|ARM.Deploy.0 = ReleaseBundle|ARM
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|x64.ActiveCfg = ReleaseBundle|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|x64.Build.0 = ReleaseBundle|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|x64.Deploy.0 = ReleaseBundle|x64
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|x86.ActiveCfg = ReleaseBundle|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|x86.Build.0 = ReleaseBundle|x86
-		{230DBCFA-B7AB-4D2A-A695-93BBCE6123D8}.ReleaseBundle|x86.Deploy.0 = ReleaseBundle|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|ARM.ActiveCfg = Debug|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|ARM.Build.0 = Debug|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|ARM.Deploy.0 = Debug|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|x64.ActiveCfg = Debug|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|x64.Build.0 = Debug|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|x64.Deploy.0 = Debug|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|x86.ActiveCfg = Debug|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|x86.Build.0 = Debug|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Debug|x86.Deploy.0 = Debug|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|ARM.ActiveCfg = DebugBundle|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|ARM.Build.0 = DebugBundle|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|ARM.Deploy.0 = DebugBundle|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|x64.ActiveCfg = DebugBundle|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|x64.Build.0 = DebugBundle|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|x64.Deploy.0 = DebugBundle|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|x86.ActiveCfg = DebugBundle|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|x86.Build.0 = DebugBundle|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.DebugBundle|x86.Deploy.0 = DebugBundle|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|ARM.ActiveCfg = Release|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|ARM.Build.0 = Release|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|ARM.Deploy.0 = Release|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|x64.ActiveCfg = Release|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|x64.Build.0 = Release|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|x64.Deploy.0 = Release|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|x86.ActiveCfg = Release|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|x86.Build.0 = Release|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.Release|x86.Deploy.0 = Release|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|ARM.ActiveCfg = ReleaseBundle|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|ARM.Build.0 = ReleaseBundle|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|ARM.Deploy.0 = ReleaseBundle|ARM
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|x64.ActiveCfg = ReleaseBundle|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|x64.Build.0 = ReleaseBundle|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|x64.Deploy.0 = ReleaseBundle|x64
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|x86.ActiveCfg = ReleaseBundle|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|x86.Build.0 = ReleaseBundle|x86
+		{caab1ee1-58e8-4155-94e2-b023f1149fae}.ReleaseBundle|x86.Deploy.0 = ReleaseBundle|x86
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.Debug|ARM.ActiveCfg = Debug|ARM
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.Debug|ARM.Build.0 = Debug|ARM
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.Debug|x64.ActiveCfg = Debug|x64

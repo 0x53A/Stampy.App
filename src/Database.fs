@@ -10,20 +10,19 @@ open Fable.Helpers.ReactNativeSimpleStore
 open Fable.PowerPack
 open Model
 
-let createDemoData() =
-    promise {
-        try
-            do! DB.clear<LocationCheckRequest>()
-            // Fetch demo data
-            let! requests =
-                Fetch.fetchAs<LocationCheckRequest[]>
-                    "https://raw.githubusercontent.com/fsprojects/fable-react_native-demo/master/demodata/LocationCheckRequests.json" []
-            do! DB.addMultiple requests
-            return requests.Length
-        with
-        | error -> return 0
-    }
+let getLastLogin () = promise {
+    let! records = DB.getAll<Model.LoginInformation>()
+    return records |> Seq.tryPick Some
+}
 
-let getIndexedCheckRequests () =
-    DB.getAll<Model.LocationCheckRequest>()
-    |> Promise.map (Array.mapi (fun i r -> i,r))
+let setLastLogin (ll) = promise {
+    do! DB.clear<Model.LoginInformation>()
+    do! DB.add<Model.LoginInformation> ll
+}
+
+let getStampHistory () = promise {
+    let! x = DB.getAll<Model.StampRecord>()
+    return x |> Seq.sortBy (fun sr -> sr.Timestamp)
+}
+
+let addStamp sr = DB.add<Model.StampRecord> sr
