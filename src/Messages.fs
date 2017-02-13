@@ -26,7 +26,7 @@ and [<RequireQualifiedAccess>] HomeSceneMsg =
 and [<RequireQualifiedAccess>] OverviewMsg =
 | LoadData
 | LoadedData of Model.StampRecord[]
-| Stamp of Model.StampTypes
+| Stamp of Model.StampType
 | StampConfirmedByServer of Model.StampRecord
 | Logout
 | Error of exn

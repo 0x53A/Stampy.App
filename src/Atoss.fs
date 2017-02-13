@@ -38,13 +38,25 @@ let findBuchungsID mode (body:string) =
     let value = findBetween xxx "'" "'"
     value
 
-let getASD () = promise {
-    let! r = Fetch.tryFetch "asd" [ Fable.PowerPack.Fetch.Fetch_types.RequestProperties.Headers [] ]
+open Fable.PowerPack.Fetch.Fetch_types
+
+let baseAddress = "https://timecontrol.nemetschek.com"
+
+let getBodyAndSessionIdFromHome () = promise {
+    let! r = Fetch.tryFetch (baseAddress + "/SES/web") [
+                // RequestProperties.Headers []
+                RequestProperties.Method HttpMethod.GET ]
     match r with
     | Ok response ->
         let headers = response.Headers
-        ()
-    | Error xn -> ()
+        match headers.SetCookie with
+        | None -> failwith "can't find cookie header"
+        | Some cookieString -> ()
+    | Error xn -> raise xn
+    return ()
+}
+
+let run(userId, password, modeOpt:Mode option) = promise {
     return ()
 }
 
